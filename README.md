@@ -89,7 +89,7 @@ Hook = Hooks are functions that let you 'hook into' Reacy state and lifecycle fe
     - The initial state argumebnt is onkly used druing the first render.
 
 * You can use State hook more than once in a single component:
-    ex:
+    - ex:
         function ExampleWithManyStates() {
             const [age, setAge] = useState(42);
             const [fruit, setFruit] = useState('banana');
@@ -97,3 +97,7 @@ Hook = Hooks are functions that let you 'hook into' Reacy state and lifecycle fe
                 text: 'Learn Hooks'
             }])
         }
+
+
+
+* Effect Hook - adds the ability to perform side effects ( data fetchingm subscriptions, or manually changing the DOM from React components before )  from a functional component.  It serves the same purpose as componentDidMount, componentDidUpdate, and componentWillUnmount in React classes but unified into a single API
